@@ -1,0 +1,20 @@
+{
+  "name": "notesapp-backend-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fatimazza/notesapp-backend-hapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fatimazza/notesapp-backend-hapi/issues"
+  },
+  "homepage": "https://github.com/Fatimazza/notesapp-backend-hapi#readme"
+}
