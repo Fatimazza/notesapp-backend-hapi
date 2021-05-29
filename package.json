@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Fatimazza/notesapp-backend-hapi/issues"
   },
-  "homepage": "https://github.com/Fatimazza/notesapp-backend-hapi#readme"
+  "homepage": "https://github.com/Fatimazza/notesapp-backend-hapi#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
