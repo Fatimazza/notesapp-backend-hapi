@@ -1,1 +1,12 @@
-console.log('Hi, this is Note app powered by Hapi and NodeJS!!');
+const Hapi = require('@hapi/hapi');
+
+const init = async () => {
+  const server = Hapi.server({
+    port: 5000,
+    host: 'localhost',
+  });
+  await server.start();
+  console.log(`Server is running at ${server.info.uri}`);
+};
+
+init();
