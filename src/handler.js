@@ -11,4 +11,27 @@ const addNoteHandler = (request, h) => {
     title, tags, body, id, createdAt, updatedAt,
   };
   notes.push(newNote);
+
+  const isSuccess = notes.filter((note) => note.id === id).length > 0;
+
+  if (isSuccess) {
+    const response = h.response({
+      status: 'success',
+      message: 'Note is added successfully!',
+      data: {
+        noteId: id,
+      },
+    });
+    response.code = 201;
+    return response;
+  }
+
+  const response = h.response(
+    {
+      status: 'fail',
+      message: 'Note is FAILED to be added.',
+    },
+  );
+  response.code = 500;
+  return response;
 };
