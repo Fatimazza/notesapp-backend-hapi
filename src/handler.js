@@ -65,4 +65,4 @@ const getNoteByIdHandler = (request, h) => {
   return response;
 };
 
-module.exports = { addNoteHandler, getAllNotesHandler };
+module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler };
