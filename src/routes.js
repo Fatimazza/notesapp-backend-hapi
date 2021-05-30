@@ -7,3 +7,5 @@ const routes = [
     handler: addNoteHandler,
   },
 ];
+
+module.exports = routes;
