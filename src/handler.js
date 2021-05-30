@@ -35,3 +35,5 @@ const addNoteHandler = (request, h) => {
   response.code = 500;
   return response;
 };
+
+module.exports = { addNoteHandler };
