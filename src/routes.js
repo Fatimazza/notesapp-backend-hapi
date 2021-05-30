@@ -11,6 +11,11 @@ const routes = [
     path: '/notes',
     handler: getAllNotesHandler,
   },
+  {
+    method: 'GET',
+    path: '/notes/{id}',
+    handler: () => { },
+  },
 ];
 
 module.exports = routes;
