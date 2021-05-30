@@ -43,4 +43,4 @@ const getAllNotesHandler = () => ({
   },
 });
 
-module.exports = { addNoteHandler };
+module.exports = { addNoteHandler, getAllNotesHandler };
