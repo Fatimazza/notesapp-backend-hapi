@@ -111,6 +111,13 @@ const deleteNoteByIdHandler = (request, h) => {
     response.code(200);
     return response;
   }
+
+  const response = h.response({
+    status: 'fail',
+    message: 'Note is FAILED to update. Id not found.',
+  });
+  response.code(404);
+  return response;
 };
 
 module.exports = {
