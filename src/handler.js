@@ -97,6 +97,10 @@ const editNoteByIdHandler = (request, h) => {
   return response;
 };
 
+const deleteNoteByIdHandler = (request, h) => {
+
+};
+
 module.exports = {
   addNoteHandler,
   getAllNotesHandler,
