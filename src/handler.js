@@ -101,6 +101,16 @@ const deleteNoteByIdHandler = (request, h) => {
   const { id } = request.params;
 
   const index = notes.findIndex((note) => note.id === id);
+
+  if (index !== -1) {
+    notes.splice(index, 1);
+    const response = h.response({
+      status: 'success',
+      message: 'Note is successfully deleted!',
+    });
+    response.code(200);
+    return response;
+  }
 };
 
 module.exports = {
