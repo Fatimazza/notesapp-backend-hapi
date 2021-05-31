@@ -98,7 +98,9 @@ const editNoteByIdHandler = (request, h) => {
 };
 
 const deleteNoteByIdHandler = (request, h) => {
+  const { id } = request.params;
 
+  const index = notes.findIndex((note) => note.id === id);
 };
 
 module.exports = {
