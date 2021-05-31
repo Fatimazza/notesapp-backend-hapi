@@ -80,6 +80,21 @@ const editNoteByIdHandler = (request, h) => {
       body,
       updatedAt,
     };
+
+    const response = h.response({
+      status: 'success',
+      message: 'Note is successfully updated!',
+    });
+    response.code(200);
+    return response;
+  }
+
+  const response = h.response({
+    status: 'fail',
+    message: 'Note is FAILED to update',
+  });
+  response.code(404);
+  return response;
 };
 
 module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler };
