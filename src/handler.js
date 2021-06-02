@@ -22,7 +22,7 @@ const addNoteHandler = (request, h) => {
         noteId: id,
       },
     });
-    response.code = 201;
+    response.code(201);
     return response;
   }
 
@@ -32,7 +32,7 @@ const addNoteHandler = (request, h) => {
       message: 'Note is FAILED to be added.',
     },
   );
-  response.code = 500;
+  response.code(500);
   return response;
 };
 
