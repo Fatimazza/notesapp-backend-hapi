@@ -75,11 +75,13 @@ npm install nanoid@3.1.23
 
 ## Run the Backend Project
 
-Run the Project on Terminal
+Run the Project on Terminal (Local)
 
 ```Bash
-npm run start
+npm run start-dev
 ```
+
+> Note: `npm run start-prod` can be run on AWS Terminal when project uploaded on AWS
 
 When server is up, can be accessed:
 
@@ -97,7 +99,9 @@ We need to use provided Front-End web
 http://notesapp-v1.dicodingacademy.com/
 ```
 
-After open the web, click Change URL to change to our Local URL
+**It's Recommended** to open the URL using Firefox Browser
+
+After open the web, click `Change URL` to change to our Local URL
 
 ### Stopping Project
 
