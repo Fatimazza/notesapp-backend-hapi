@@ -87,13 +87,19 @@ When server is up, can be accessed:
 
 ### By Browser
 
-Open Local URL
+Open **Local Base URL**
 
 ```Bash
 http://localhost:5000/
 ```
 
-We need to use provided Front-End web
+All Notes URL
+
+```Bash
+http://localhost:5000/notes
+```
+
+We can use provided Front-End web 
 
 ```Bash
 http://notesapp-v1.dicodingacademy.com/
@@ -101,7 +107,7 @@ http://notesapp-v1.dicodingacademy.com/
 
 **It's Recommended** to open the URL using Firefox Browser
 
-After open the web, click `Change URL` to change to our Local URL
+After open the web, click `Change URL` to change to our **Local Base URL**
 
 ### Stopping Project
 
